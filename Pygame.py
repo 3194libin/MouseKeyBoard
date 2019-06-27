@@ -16,7 +16,7 @@ while   True:
     for event in pygame.event.get():
         if event.type ==pygame.QUIT:
             sys.exit( )
-        screen.blit(font.render(str(event),True,(0,255,0),(0,position)))
+        screen.blit(font.render(str(event),True,(0,255,0)),(0,position))
         position +=line_height
 
         if position > height:
